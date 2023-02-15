@@ -1,6 +1,6 @@
 ## CI/CD Pipeline To Deploy a backend app
 
-#### Create credintials in Jenkins:
+### Create credintials in Jenkins:
  - Dockerhub credintials
  - Credintials for the new service account 
 
