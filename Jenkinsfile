@@ -25,7 +25,7 @@ pipeline {
                 withCredentials([file(credentialsId: 'svc', variable: 'config')]){
                     sh """
                         gcloud auth activate-service-account --key-file=${config}
-                        gcloud container clusters get-credentials private-cluster --zone us-east4-b --project mahmoud-ibrahim-2023
+                        gcloud container clusters get-credentials cluster-pv --zone us-east4-c --project jehad-iti
                         sed -i 's/tag/${BUILD_NUMBER}/g' deployment/deployment.yaml
                         kubectl apply -Rf deployment
                     """
