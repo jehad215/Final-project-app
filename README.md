@@ -1,11 +1,15 @@
 ## CI/CD Pipeline To Deploy a backend app
 
+### Second part of project: CI/CD
+
 ### Create credintials in Jenkins:
  - Dockerhub credintials
  - Credintials for the new service account 
+ ![](./images/jenkins%20credentials.png)
 
 ### CI pipeline:
 #### 1. Pull code from GitHub
+![](./images/pipeline.png)
 
 #### 2. Create Dockerfile
 - to dockerize the app
@@ -14,6 +18,13 @@ $ docker build -t jehad21/app .
 $ docker push jehad21/app
 ```
 #### 3. Trigger CD pipeline to run
+![](./images/webhook.png)
+
+### - Least but not last
+![](./images/pipeline-build.png)
+
+### - Voila! Application is successfully deployed
+![](./images/app.png)
 
 ### Finally: Destroy
 ```bash
