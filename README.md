@@ -24,13 +24,14 @@ $ docker push jehad21/app
  - On GitHub 
 ![](./images/webhook.png)
 
-###  Least but not last
+###  Least but not least
+![](./images/piprun.png)
 ![](./images/pipeline-build.png)
 
-###  Voila! Application is successfully deployed
+###  And Voila! Application is successfully deployed
 ![](./images/app.png)
 
-### Finally: Destroy
+### Finally: Destroy all resources
 ```bash
 $ terraform destroy
 ```
