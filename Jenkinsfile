@@ -24,7 +24,6 @@ pipeline {
 
                 withCredentials([file(credentialsId: 'svc', variable: 'config')]){
                     sh """
-                        cd backend-app
                         gcloud auth activate-service-account --key-file=${config}
                         gcloud container clusters get-credentials cluster-pv --zone us-east4-c --project jehad-iti
                         sed -i 's/tag/${BUILD_NUMBER}/g' deployment/deployment.yaml
