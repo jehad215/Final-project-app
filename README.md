@@ -24,7 +24,7 @@ $ docker push jehad21/app
  - On GitHub 
 ![](./images/webhook.png)
 
-###  Least but not least
+###  Last but not least
 ![](./images/piprun.png)
 ![](./images/pipeline-build.png)
 
