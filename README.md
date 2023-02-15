@@ -5,7 +5,7 @@
 ### Create credintials in Jenkins:
  - Dockerhub credintials
  - Credintials for the new service account 
- ![](./images/jenkins%20credentials.png)
+![](./images/jenkins%20credentials.png)
 
 ### CI pipeline:
 #### 1. Pull code from GitHub
@@ -18,12 +18,16 @@ $ docker build -t jehad21/app .
 $ docker push jehad21/app
 ```
 #### 3. Trigger CD pipeline to run
+ - On jenkins
+![](./images/web.png)
+
+ - On GitHub 
 ![](./images/webhook.png)
 
-### - Least but not last
+###  Least but not last
 ![](./images/pipeline-build.png)
 
-### - Voila! Application is successfully deployed
+###  Voila! Application is successfully deployed
 ![](./images/app.png)
 
 ### Finally: Destroy
